@@ -1,5 +1,26 @@
-#mainContainer
 div{
-  margin-left: 10%;
-  margin-right: 10%;
+  text-align: center;
+  margin-left: 1.6%;
+  margin-right: 1.6%;
+}
+
+#currentContainer{
+  color: red;
+  text-emphasis: bold;
+  font-size: 40pt;
+  background-color: lightgray;
+}
+
+#highlightContainer{
+  color: blue;
+  text-emphasis: bold;
+  font-size: 40pt;
+  background-color: lightslategray;
+}
+
+#opinionContainer{
+  color: royalblue;
+  text-emphasis: bold;
+  font-size: 40pt;
+  background-color: lightcyan;
 }

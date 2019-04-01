@@ -1,14 +1,15 @@
 <div>
   <mat-toolbar color="primary" fxLayout="row">
-      <div id="logo-container" fxLayoutAlign="start center" *ngIf="logo">
+      <div id="logo-container" fxLayoutAlign="start center" *ngIf="logo" fxFlex>
           <a (click)="onLogoClick()" fxLayout="column" fxLayoutAlign="center start" style="cursor: pointer;">
             <img [src]="logo">
           </a>
-        </div>
-      <div style="text-align: center" fxFlex>
-        <span >"Don't get on my bad side, I'm dangerous"</span>
+          <span class="nameTitle">Luke Truitt</span>
       </div>
-       <div fxLayoutAlign="start right">
+      <div style="text-align: center" fxLayoutAlign="center center" fxFlex>
+        <span id="title">{{title}}</span>
+      </div>
+       <div fxLayoutAlign="start right" fxFlex>
           <button mat-fab color="accent" [matMenuTriggerFor]="pages">
             <mat-icon>more_vert</mat-icon>
           </button>
@@ -21,6 +22,7 @@
               <mat-icon>dashboard</mat-icon>
               <span>Portfolio</span>
             </button>
+            <!--
             <button mat-menu-item class="menu-item" (click)="onClickEconomy()" *ngIf = "!economy">
               <mat-icon>trending_up</mat-icon>
               <span>Economy</span>
@@ -33,9 +35,10 @@
               <mat-icon>public</mat-icon>
               <span>Politics</span>
             </button>
+            -->
             <button mat-menu-item class="menu-item" (click)="onClickPhilosophy()" *ngIf = "!philosophy">
               <mat-icon>group</mat-icon>
-              <span>Philosophy</span>
+              <span>Thoughts</span>
             </button>
           </mat-menu>
         </div>
